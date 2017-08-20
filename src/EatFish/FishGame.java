@@ -173,7 +173,7 @@ public class FishGame extends JFrame implements Runnable, KeyListener, ActionLis
 							if (eFish.get(i).isEat(mf.getSize())) {
 								score += eFish.get(i).getScore();
 								// 加个音效试试看
-								play("EatFish/game_eat.mp3");
+                                new Thread(() -> play("EatFish/game_eat.mp3")).start();
 								eFish.remove(i);
 								mf.setIndex(0);
 								mf.setStation(1);

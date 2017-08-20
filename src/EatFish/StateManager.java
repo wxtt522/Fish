@@ -52,7 +52,7 @@ public class StateManager {
 		g.setFont(f);
 		g.drawString("" + score, 800, 650 - height);
 
-		g.drawString("µÈ¼¶", 905, 650 - height);
+		g.drawString("ï¿½È¼ï¿½", 905, 650 - height);
 
 		g.drawString("" + size, 923, 685 - height);
 
